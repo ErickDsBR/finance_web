@@ -1,9 +1,7 @@
-function App() {
-  return (
-    <div>
-      <h1>Finance Web</h1>
-      <p>Welcome to the Finance Web application!</p>
-    </div>
-  );
+import "./styles/theme.css";
+import "./styles/global.css";
+import { Auth } from "./components/auth/Auth";
+
+export function App() {
+  return <Auth></Auth>;
 }
-export { App };
