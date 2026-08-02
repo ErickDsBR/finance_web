@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: var(--secondary-background);
-  font-size: 1rem;
+  background-color: var(--system-background);
   font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
 }
