@@ -1,4 +1,5 @@
 :root {
+  /*! background / system */
   --system-background: #ffffff;
   --secondary-background: #f2f2f7;
   --grouped-background: #f2f2f7;
@@ -10,7 +11,19 @@
   --grey-500: #e5e5ea;
   --grey-600: #f2f2f7;
 
+  /*! system */
+
   --system-blue: #007aff;
 
-  --separator: #3c3c43;
+  /*! separator */
+
+  --separator: rgb(60, 60, 67, 0.29);
+  --opaque-separator: #c6c6ce;
+
+  /*! text/ label */
+
+  --label: #000000;
+  --secondary-label: rgb(60, 60, 67, 0.6);
+  --tertiary-label: rgb(60, 60, 67, 0.3);
+  --quaternary-label: rgb(60, 60, 67, 0.18);
 }
