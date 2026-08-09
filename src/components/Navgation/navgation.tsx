@@ -26,12 +26,7 @@ export function Nav() {
   return (
     <div className=" flex justify-center items-center gap-5 mt-6">
       <div
-        className="
-        flex items-center justify-center 
-        py-2 px-6
-        bg-gray-500 rounded-full shadow-black/50 shadow-md
-        "
-      >
+        className="flex items-center justify-center py-2 px-6bg- gray-500 rounded-full shadow-black/50 shadow-md">
         {herder.map((item) => (
           <a
             key={item.id}
@@ -40,7 +35,7 @@ export function Nav() {
           >
             {item.title}
           </a>
-        ))}
+        ))} 
       </div>
     </div>
   );
