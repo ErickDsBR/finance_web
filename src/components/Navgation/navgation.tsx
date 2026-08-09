@@ -1,5 +1,3 @@
-import styles from "./Navigation.module.css";
-
 interface hederitens {
   id: string;
   title: string;
@@ -26,16 +24,24 @@ const herder: hederitens[] = [
 
 export function Nav() {
   return (
-    <div className={styles.nav_container}>
-      {herder.map((item) => (
-        <a
-          key={item.id}
-          href={item.link}
-          className={styles.nav_link}
-        >
-          {item.title}
-        </a>
-      ))}
+    <div className=" flex justify-center items-center gap-5 mt-6">
+      <div
+        className="
+        flex items-center justify-center 
+        py-2 px-6
+        bg-gray-500 rounded-full shadow-black/50 shadow-md
+        "
+      >
+        {herder.map((item) => (
+          <a
+            key={item.id}
+            href={item.link}
+            className="text-black/75 flex p-3 items-center font-bold"
+          >
+            {item.title}
+          </a>
+        ))}
+      </div>
     </div>
   );
 }
