@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "tailwindcss-motion";
+
 body {
   background-color: var(--grey-600);
   font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
