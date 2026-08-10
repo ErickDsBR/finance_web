@@ -1,8 +1,9 @@
 export function Home() {
   return (
     <div className="home">
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the main landing page of our application.</p>
+      <h1 className="flex items-center justify-center text-5xl text-blue-600/75 pt-8 motion-preset-slide-up-lg ">
+        Welcome to the Cash In
+      </h1>
     </div>
   );
 }
