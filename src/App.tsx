@@ -9,10 +9,9 @@ import { Home } from "./pages/home/home.tsx";
 //! react
 import { useState } from "react";
 
-
 export function App() {
   const [screen, setScreen] = useState("Home");
-  
+
   function RenderScreen() {
     if (screen === "Home") return <Home />;
     if (screen === "Sobre") return <Sobre />;
