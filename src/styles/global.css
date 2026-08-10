@@ -1,6 +1,6 @@
 @import "tailwindcss";
 body {
-  background-color: var(--system-background);
+  background-color: var(--grey-600);
   font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;    
+  font-size: 1.6rem;
 }

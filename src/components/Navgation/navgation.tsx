@@ -1,41 +1,43 @@
 interface hederitens {
   id: string;
   title: string;
-  link: string;
+}
+interface NavProps {
+  OnChangeScreen: (id: string) => void;
 }
 
 const herder: hederitens[] = [
   {
+    id: "Home",
+    title: "Home",
+  },
+  {
     id: "Sobre",
     title: "Sobre",
-    link: "../../pages/sobre/sobre.tsx",
   },
   {
     id: "Funcionalidades",
     title: "Funcionalidades",
-    link: "/funcionalidades",
   },
   {
     id: "Download",
     title: "Download",
-    link: "/download",
   },
 ];
 
-export function Nav() {
+export function Nav({ OnChangeScreen }: NavProps) {
   return (
     <div className=" flex justify-center items-center gap-5 mt-6">
-      <div
-        className="flex items-center justify-center py-2 px-6bg- gray-500 rounded-full shadow-black/50 shadow-md">
+      <div className="flex items-center justify-center py-2 px-6 bg-gray-500 rounded-full shadow-black/50 shadow-md">
         {herder.map((item) => (
-          <a
+          <button
             key={item.id}
-            href={item.link}
+            onClick={() => OnChangeScreen(item.id)}
             className="text-black/75 flex p-3 items-center font-bold"
           >
             {item.title}
-          </a>
-        ))} 
+          </button>
+        ))}
       </div>
     </div>
   );
