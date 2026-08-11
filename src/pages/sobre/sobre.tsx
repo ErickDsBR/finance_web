@@ -1,6 +1,6 @@
 export function Sobre() {
   return (
-    <div className="flex justify-center items-center pt-16">
+    <div className="flex-row justify-center items-center pt-16">
       <h1 className="flex items-center justify-center pr-40">Sobre</h1>
       <p>
         Olá! Eu sou o Erick, desenvolvedor de software focado em criar soluções
