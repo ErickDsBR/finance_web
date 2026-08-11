@@ -2,7 +2,7 @@
 @plugin "tailwindcss-motion";
 
 body {
-  background-color: var(--grey-600);
+  background-color: var(--grey-400);
   font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
 }
